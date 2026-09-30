@@ -1,0 +1,11 @@
+# 原始求职资料只留在本机，不上传到 Vercel CLI。
+/.private-audit/
+/.playwright-cli/
+/证书/
+/成绩单.jpg
+/就业推荐表正面.jpg
+/就业推荐表背面.jpg
+/简历.pdf
+/简历-色块版.docx
+/教育部学籍在线验证报告_张鑫-1.pdf
+/自动化专业学分绩点排名.pdf
