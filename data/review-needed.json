@@ -1,0 +1,37 @@
+[
+  {
+    "id": "award-challenge-provincial",
+    "topic": "挑战杯省二等奖",
+    "evidence": "简历和就业推荐表写有省二等奖；现有证书仅能核实 2026 年校内选拔赛一等奖。",
+    "action": "若有省赛证书，请提供后再增加省级奖项。",
+    "publicStatus": "暂不展示省二等奖"
+  },
+  {
+    "id": "award-electronics-official",
+    "topic": "电子设计竞赛奖项性质",
+    "evidence": "简历概括为省一等奖；现有证书写明 2026 年贵州赛区欣源杯模拟赛本科组一等奖。",
+    "action": "如另有正式竞赛获奖证书，请提供。",
+    "publicStatus": "按模拟赛证书原文展示"
+  },
+  {
+    "id": "education-dates",
+    "topic": "入学与预计毕业时间",
+    "evidence": "简历写 2023.08—2027.06；教育部学籍在线验证报告写 2023.09.01 入学、2027.07.01 预计毕业。",
+    "action": "对外展示采用 2026 年 9 月更新的官方学籍材料；请确认简历是否需要同步修改。",
+    "publicStatus": "展示 2023.09—2027.07（预计）"
+  },
+  {
+    "id": "project-media",
+    "topic": "项目图片、代码仓库与演示视频",
+    "evidence": "现有资料只有文字描述，没有可公开的项目照片、仓库链接或演示视频。",
+    "action": "后续可提供经授权的图片、GitHub 链接和演示视频。",
+    "publicStatus": "以文字和流程图展示"
+  },
+  {
+    "id": "paper-public-copy",
+    "topic": "论文公开稿与 DOI",
+    "evidence": "现有录用函，没有论文 PDF、正式 DOI 或公开链接。",
+    "action": "论文公开后可补充正式链接和摘要。",
+    "publicStatus": "仅展示录用状态和作者信息"
+  }
+]

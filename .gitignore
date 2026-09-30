@@ -1,0 +1,22 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env*
+!.env.example
+.private-audit/
+.playwright-cli/
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+
+# 原始求职资料只保留在本机；public 中仅放脱敏后的发布文件。
+/证书/
+/成绩单.jpg
+/就业推荐表正面.jpg
+/就业推荐表背面.jpg
+/简历.pdf
+/简历-色块版.docx
+/教育部学籍在线验证报告_张鑫-1.pdf
+/自动化专业学分绩点排名.pdf

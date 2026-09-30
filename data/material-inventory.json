@@ -1,0 +1,18 @@
+[
+  { "id": "resume-pdf", "source": "中文 PDF 简历", "format": "PDF", "usedFor": "项目、实习、技能、科研与竞赛线索", "public": false, "reason": "原件含完整手机号；已制作独立公开版" },
+  { "id": "resume-word", "source": "中文 Word 简历", "format": "DOCX", "usedFor": "与 PDF 简历交叉核对", "public": false, "reason": "原件含完整手机号" },
+  { "id": "student-status", "source": "教育部学籍在线验证报告", "format": "PDF", "usedFor": "学校、学院、专业、学历、入学及预计毕业日期", "public": false, "reason": "含出生日期、在线验证码和验证二维码" },
+  { "id": "ranking", "source": "自动化专业学分绩点排名", "format": "PDF", "usedFor": "本人绩点和专业排名", "public": false, "reason": "含其他学生姓名、学号和成绩" },
+  { "id": "transcript", "source": "个人成绩单", "format": "JPG", "usedFor": "课程名称与成绩交叉核对", "public": false, "reason": "含学号和完整个人成绩" },
+  { "id": "recommendation-front", "source": "就业推荐表正面", "format": "JPG", "usedFor": "证件照裁切、排名与经历核对", "public": false, "reason": "含手机号、家庭住址和邮编" },
+  { "id": "recommendation-back", "source": "就业推荐表背面", "format": "JPG", "usedFor": "校内评价参考", "public": false, "reason": "含签字、盖章和原始个人材料" },
+  { "id": "award-electronics", "source": "电子设计竞赛贵州赛区模拟赛证书", "format": "PDF", "usedFor": "模拟赛奖项名称、级别和时间", "public": "脱敏 WebP" },
+  { "id": "award-bisheng-regional", "source": "毕昇杯重庆赛区一等奖证书", "format": "PDF", "usedFor": "赛区奖项、参赛作品", "public": "隐藏证书编号的 WebP" },
+  { "id": "award-bisheng-national", "source": "毕昇杯全国总决赛三等奖证书", "format": "PDF", "usedFor": "全国总决赛奖项、参赛作品", "public": "隐藏证书编号的 WebP" },
+  { "id": "award-challenge", "source": "挑战杯校内选拔赛一等奖证书", "format": "PDF", "usedFor": "校级奖项、团队角色和作品名称", "public": "压缩 WebP" },
+  { "id": "patent-air-ground", "source": "无人机空地协同探测系统专利受理通知", "format": "PDF", "usedFor": "专利名称、类型、本人顺位和受理状态", "public": false, "reason": "含申请号及代理联系信息" },
+  { "id": "patent-latte", "source": "智能拉花咖啡机专利受理通知", "format": "PDF", "usedFor": "专利名称、类型、本人顺位和受理状态", "public": false, "reason": "含申请号及代理联系信息" },
+  { "id": "patent-yolo", "source": "嵌入式与 YOLO 无人机识别系统专利受理通知", "format": "PDF", "usedFor": "专利名称、类型、本人顺位和受理状态", "public": false, "reason": "含申请号及代理联系信息" },
+  { "id": "patent-edge", "source": "电力巡检无人机边缘数据管理装置专利受理通知", "format": "PDF", "usedFor": "专利名称、类型、本人顺位和受理状态", "public": false, "reason": "含申请号及代理联系信息" },
+  { "id": "cisc-acceptance", "source": "CISC 2026 论文录用函", "format": "PDF", "usedFor": "论文题目、作者顺位、会议和录用状态", "public": false, "reason": "没有公开稿，录用函含内部稿件编号" }
+]
