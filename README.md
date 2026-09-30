@@ -62,22 +62,23 @@ npm run start
 
 ## 5. GitHub 与 Vercel 公网部署
 
-本目录已经初始化 Git 并可作为独立仓库。先在 GitHub 新建一个**空仓库**，不要勾选自动创建 README 或 `.gitignore`。随后在本目录执行（把地址替换成你新建仓库的地址）：
+本项目的 GitHub 仓库是 [zzxx97300-sudo/-](https://github.com/zzxx97300-sudo/-)。本目录已连接该仓库的 `main` 分支。以后修改内容并通过本地构建后，执行：
 
 ```bash
-git remote add origin https://github.com/你的用户名/你的仓库名.git
-git push -u origin main
+git add .
+git commit -m "更新个人网站"
+git push
 ```
 
-若提示登录，请在浏览器中完成 GitHub 授权。推送前可运行 `git status --short` 和 `git ls-files`，确认原始个人材料没有被跟踪。
+若提示登录，请在浏览器中完成 GitHub 授权。推送前可运行 `git status --short` 和 `git ls-files`，确认原始个人材料没有被跟踪。`.gitignore` 与 `.vercelignore` 分别控制 Git 和 Vercel CLI 排除的本机私密资料。
 
 ### 在 Vercel 网站部署（推荐）
 
 1. 登录 [Vercel](https://vercel.com/)；在 Dashboard 选择 **Add New → Project**。
-2. 连接 GitHub，导入刚才的仓库。Framework Preset 选择 **Next.js**，其余保留默认。
+2. 连接 GitHub，导入 `zzxx97300-sudo/-`。Framework Preset 选择 **Next.js**，其余保留默认。
 3. 点击 **Deploy**。成功后会得到 `https://项目名.vercel.app` 公网地址。
 4. 在 Vercel 的 Project Settings → Environment Variables 可设置 `NEXT_PUBLIC_SITE_URL` 为这个正式地址，然后重新部署，以使 canonical、Open Graph 与站点地图指向稳定网址。未设置时，站点会自动使用 Vercel 提供的生产域名。
-5. 以后只要修改数据、提交并推送 `main`，Vercel 会自动构建更新。
+5. 若项目已连接 GitHub，以后提交并推送 `main`，Vercel 会自动构建更新；若项目仅通过 CLI 创建，先在 Vercel Project Settings → Git 连接仓库，或在本目录运行 `npx vercel --prod` 手动更新。
 
 也可在完成 [Vercel CLI 登录](https://vercel.com/docs/cli) 后于本目录执行：
 
@@ -89,7 +90,14 @@ npx vercel --prod
 
 ### 网站二维码
 
-取得最终公网地址后，生成指向该 URL 的二维码，保存为 `public/website-qrcode.png`，再重新部署。二维码必须指向稳定的生产域名；部署前不要使用 `localhost` 或猜测的域名生成。若以后更换域名，需重生二维码并更新纸质材料。
+取得最终公网地址后，运行以下命令生成印刷用二维码，再提交并重新部署：
+
+```bash
+python -m pip install "qrcode[pil]"
+python scripts/generate_website_qr.py https://你的正式域名.vercel.app
+```
+
+输出为 `public/website-qrcode.png`。二维码必须指向稳定的生产域名；若以后更换域名，需重新生成二维码并更新纸质材料。
 
 ## 6. 自定义域名
 
